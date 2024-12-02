@@ -8,26 +8,22 @@ public class MoveForward extends Command {
     final int distance;
 
     public MoveForward(Drivetrain drivetrain, int distance) {
-        /* Fill this in yourself! */
+        
     }
 
     @Override
     public void initialize() {
-        /* Fill this in yourself! */
+       
     }
 
-    @Override
-    public void execute() {
-        /* Fill this in yourself! */
-    }
-
-    @Override
-    public void end(boolean interrupted) {
-        /* Fill this in yourself! */
+    @Override 
+    public void end(boolean interrupted) { 
+        
     }
 
     @Override
     public boolean isFinished() {
-        /* Fill this in yourself! */
+        return false;
     }
+    
 }
