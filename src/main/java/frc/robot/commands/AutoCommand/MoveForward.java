@@ -8,6 +8,9 @@ public class MoveForward extends Command {
     final int distance;
 
     public MoveForward(Drivetrain drivetrain, int distance) {
+        this.drivetrain = drivetrain;
+        this.distance = distance;
+        addRequirements(drivetrain);
         /* Fill this in yourself! */
     }
 
@@ -17,17 +20,15 @@ public class MoveForward extends Command {
     }
 
     @Override
-    public void execute() {
-        /* Fill this in yourself! */
-    }
 
     @Override
     public void end(boolean interrupted) {
+        drivetrain.arcanedrive(0);
         /* Fill this in yourself! */
     }
 
     @Override
     public boolean isFinished() {
-        /* Fill this in yourself! */
+        return false;
     }
 }

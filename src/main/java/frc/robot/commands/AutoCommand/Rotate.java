@@ -23,6 +23,6 @@ public class Rotate {
     }
 
     public boolean isFinished() {
-        /* Fill this in yourself! */
+        return false;
     }
 }
