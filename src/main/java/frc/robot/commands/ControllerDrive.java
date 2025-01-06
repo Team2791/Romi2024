@@ -13,9 +13,7 @@ public class ControllerDrive extends Command {
         this.controller = controller;
         this.drivetrain = drivetrain;
 
-        // you must use addRequirements() to specify the subsystems used by this command
-        // remember how the command scheduler works?
-        /* Fill this in yourself! */
+     addRequirements(drivetrain);
     }
 
     // What should this command do?
@@ -23,7 +21,7 @@ public class ControllerDrive extends Command {
     public void execute() {
         double speed = controller.getLeftY();
         double rot = controller.getRightX();
-
+        drivetrain.arcadeDrive(speed, rot);
         // ?
     }
 }
