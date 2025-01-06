@@ -22,6 +22,6 @@ public class ControllerDrive extends Command {
         double speed = controller.getLeftY();
         double rot = controller.getRightX();
         drivetrain.arcadeDrive(speed,rot);
-        drivetrain.arcadeDrive(50,90);
+        
     }
 }
