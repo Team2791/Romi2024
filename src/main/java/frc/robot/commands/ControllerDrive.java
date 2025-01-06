@@ -15,7 +15,7 @@ public class ControllerDrive extends Command {
 
         // you must use addRequirements() to specify the subsystems used by this command
         // remember how the command scheduler works?
-        addRequirements(drivetrain)
+        addRequirements(drivetrain);
      }
 
     // What should this command do?
