@@ -15,8 +15,8 @@ public class ControllerDrive extends Command {
 
         // you must use addRequirements() to specify the subsystems used by this command
         // remember how the command scheduler works?
-        /* Fill this in yourself! */
-    }
+        addRequirements(drivetrain)
+     }
 
     // What should this command do?
     @Override
@@ -24,6 +24,7 @@ public class ControllerDrive extends Command {
         double speed = controller.getLeftY();
         double rot = controller.getRightX();
 
+        drivetrain.arcadeDrive(speed,rot);
         // ?
     }
 }
