@@ -7,22 +7,23 @@ public class Rotate {
     final double degrees;
 
     public Rotate(Drivetrain drivetrain, double degrees) {
-        /* Fill this in yourself! */
+        this.drivetrain=drivetrain;
+        this.degrees=degrees;
     }
 
     public void initialize() {
-        /* Fill this in yourself! */
+        drivetrain.resetEncoders();
+        drivetrain.arcadeDrive(0,2);
     }
 
     public void execute() {
-        /* Fill this in yourself! */
-    }
-
-    public void end() {
-        /* Fill this in yourself! */
-    }
+        
+    }    
+    public void end(boolean interrupted) { 
+        drivetrain.arcadeDrive(0,0);
+    }    
 
     public boolean isFinished() {
-        /* Fill this in yourself! */
+        
     }
 }
