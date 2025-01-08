@@ -21,6 +21,7 @@ public class MoveFoward extends Command {
   public void initialize() {
     drivetrain.resetEncoders();
     drivetrain.arcadeDrive(1,0);
+    
   }
 
   // Called once the command ends or is interrupted.
