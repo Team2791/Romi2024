@@ -30,7 +30,6 @@ public class Drivetrain extends SubsystemBase {
         resetEncoders();
         right.setInverted(true);
     }
-
     /** Drives the robot, with speed and rotate values between -1 and 1  */
     public void arcadeDrive(double speed, double rotate) {
         driveController.arcadeDrive(speed, rotate);
@@ -43,7 +42,6 @@ public class Drivetrain extends SubsystemBase {
     }
 
     public double leftDistance() {
-        if(drivetrain.leftDistance>=distance)
         return leftEncoder.getDistance();
     }
 
