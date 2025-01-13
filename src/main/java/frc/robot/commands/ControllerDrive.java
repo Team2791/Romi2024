@@ -13,7 +13,9 @@ public class ControllerDrive extends Command {
         this.controller = controller;
         this.drivetrain = drivetrain;
         addRequirements(drivetrain); 
-       
+        // you must use addRequirements() to specify the subsystems used by this command
+        // remember how the command scheduler works?
+        /* Fill this in yourself! */
     }
 
     // What should this command do?
